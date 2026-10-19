@@ -1,305 +1,211 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio professionnel de DADA Iréné, diplômé en génie électrique, systèmes industriels, maintenance et automatisme.">
-  <title>DADA Iréné | Portfolio professionnel</title>
-  <style>
-    :root {
-      --navy: #101d35;
-      --blue: #17365d;
-      --teal: #16c6b3;
-      --light: #f4f7fb;
-      --text: #243047;
-      --muted: #65728a;
-      --white: #ffffff;
-    }
-
-    * { box-sizing: border-box; scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--light);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 20px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .logo { font-weight: bold; letter-spacing: 1px; }
-    .logo span { color: var(--teal); }
-
-    nav { display: flex; gap: 18px; flex-wrap: wrap; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    nav a:hover { color: var(--teal); }
-
-    .hero {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: white;
-      padding: 80px 7%;
-    }
-
-    .hero-content { max-width: 850px; margin: auto; }
-    .tag {
-      display: inline-block;
-      color: var(--teal);
-      border: 1px solid var(--teal);
-      padding: 5px 12px;
-      border-radius: 30px;
-      font-size: 13px;
-    }
-
-    h1 { font-size: clamp(36px, 7vw, 58px); line-height: 1.15; margin: 22px 0; }
-    h1 span { color: var(--teal); }
-    .hero p { max-width: 680px; color: #e0e8f4; font-size: 17px; }
-
-    .button {
-      display: inline-block;
-      background: var(--teal);
-      color: var(--navy);
-      text-decoration: none;
-      font-weight: bold;
-      padding: 12px 20px;
-      border-radius: 7px;
-      margin: 14px 10px 0 0;
-    }
-
-    .button.secondary {
-      background: transparent;
-      border: 1px solid #d8e3f3;
-      color: white;
-    }
-
-    main { max-width: 1100px; margin: auto; padding: 20px 7% 60px; }
-    section { padding-top: 42px; }
-    h2 { color: var(--navy); font-size: 27px; margin-bottom: 10px; }
-    .underline { width: 55px; height: 4px; background: var(--teal); margin-bottom: 25px; }
-    .muted { color: var(--muted); }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: white;
-      padding: 23px;
-      border-radius: 12px;
-      border: 1px solid #e6ebf2;
-      box-shadow: 0 5px 18px rgba(16, 29, 53, 0.04);
-    }
-
-    .card h3 { color: var(--blue); margin-top: 0; }
-    .pill {
-      display: inline-block;
-      background: #e6f8f5;
-      color: #087f73;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 13px;
-      margin: 4px 3px 4px 0;
-    }
-
-    .timeline {
-      border-left: 3px solid var(--teal);
-      padding-left: 22px;
-      margin-left: 5px;
-    }
-
-    .timeline .card { margin-bottom: 18px; }
-    .contact { background: var(--navy); color: white; padding: 28px; border-radius: 12px; }
-    .contact h2 { color: white; }
-    .contact a { color: var(--teal); overflow-wrap: anywhere; }
-
-    footer {
-      text-align: center;
-      background: #0a1426;
-      color: #c8d2e2;
-      padding: 22px;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      header { padding: 18px 5%; }
-      .hero { padding: 55px 6%; }
-      main { padding-left: 6%; padding-right: 6%; }
-      nav { gap: 12px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DADAH Iréné | Technicien de maintenance électrique junior</title>
+<meta name="description" content="Portfolio de DADAH Iréné, technicien de maintenance électrique junior : génie électrique, systèmes industriels, automatisme, motorisation, photovoltaïque. Cotonou, Bénin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f5f6;--ink:#14212b;--steel:#56656f;--line:#d3d9dc;--cu:#a85a26;--cu-d:#8a4519;--card:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cu);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.brand{font:700 1.25rem "Barlow Condensed",sans-serif;letter-spacing:.04em;text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+nav a{text-decoration:none;color:var(--steel)}
+nav a:hover{color:var(--cu-d)}
+.hero{padding:64px 0 48px}
+.hero h1{font:700 clamp(2.8rem,9vw,5rem)/1 "Barlow Condensed",sans-serif;margin:0 0 14px;letter-spacing:.01em}
+.hero .role{font-size:1.25rem;font-weight:600;margin:0 0 14px;max-width:34ch}
+.hero p{max-width:60ch;color:var(--steel);margin:0 0 26px}
+.photo{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 0 22px;border:3px solid var(--cu)}
+.wire{position:relative;height:2px;background:var(--cu);margin:0 0 30px;max-width:340px}
+.wire::after{content:"";position:absolute;right:-7px;top:-6px;width:14px;height:14px;border:2px solid var(--cu);border-radius:50%;background:var(--bg)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:4px;text-decoration:none;font-weight:600;border:2px solid var(--ink)}
+.btn.main{background:var(--ink);color:#fff}
+.btn.main:hover{background:var(--cu-d);border-color:var(--cu-d)}
+.btn.alt:hover{border-color:var(--cu-d);color:var(--cu-d)}
+section{padding:42px 0;border-top:1px solid var(--line)}
+h2{font:700 2rem/1.1 "Barlow Condensed",sans-serif;margin:0 0 22px;letter-spacing:.02em}
+h3{font-size:1.1rem;margin:0 0 4px}
+.lead{max-width:62ch;margin:0 0 12px}
+.proj{display:grid;grid-template-columns:1fr;gap:0}
+.proj article{padding:18px 0;border-bottom:1px solid var(--line)}
+.proj article:first-child{padding-top:0}
+.proj p{margin:4px 0 0;max-width:64ch}
+.proj .where{color:var(--steel);font-size:.92rem}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--cu)}
+.tl li{position:relative;padding:0 0 28px}
+.tl li::before{content:"";position:absolute;left:-34px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--cu)}
+.tl time{display:block;color:var(--cu-d);font-weight:600;font-size:.92rem}
+.tl ul{margin:8px 0 0;padding-left:20px}
+.tl li li{padding:0 0 3px}
+.tl li li::before{display:none}
+dl{margin:0;display:grid;grid-template-columns:1fr;gap:14px}
+dt{font-weight:600}
+dd{margin:0;color:var(--steel)}
+@media(min-width:640px){dl{grid-template-columns:230px 1fr;gap:12px 24px}dd{padding-top:0}}
+.tools{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tools li{border:1px solid var(--line);background:var(--card);padding:4px 12px;border-radius:4px;font-size:.95rem}
+.contact a{font-weight:600}
+.contact p{margin:0 0 8px}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--steel);font-size:.9rem}
+</style>
 </head>
 <body>
-
 <header>
-  <div class="logo">DADA <span>IRÉNÉ</span></div>
-  <nav>
-    <a href="#apropos">À propos</a>
-    <a href="#competences">Compétences</a>
-    <a href="#experience">Expérience</a>
-    <a href="#formation">Formation</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="wrap">
+    <a class="brand" href="#top">DADAH IRÉNÉ</a>
+    <nav aria-label="Navigation principale">
+      <a href="#realisations">Réalisations</a>
+      <a href="#experience">Expérience</a>
+      <a href="#competences">Compétences</a>
+      <a href="#education">Éducation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <span class="tag">Génie électrique · Systèmes industriels</span>
-    <h1>Bonjour, je suis <span>DADA Iréné</span></h1>
-    <p>
-      Technicien junior en génie électrique, passionné par la maintenance,
-      l'automatisme, les systèmes industriels et les technologies.
-      Je souhaite contribuer à des projets techniques tout en développant
-      mes compétences sur le terrain.
-    </p>
-    <a class="button" href="#contact">Me contacter</a>
-    <a class="button secondary" href="#experience">Découvrir mon parcours</a>
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+
+      <!-- PHOTO : pour l'activer, envoie ta photo dans le dépôt sous le nom photo.jpg,
+           puis supprime la ligne "<!--" avant et la ligne "-->" après la balise img.
+      <img class="photo" src="photo.jpg" alt="Portrait de DADAH Iréné">
+      -->
+
+      <h1>DADAH Iréné</h1>
+      <p class="role">Technicien de maintenance électrique junior</p>
+      <div class="wire" aria-hidden="true"></div>
+      <p>Formé en génie électrique, option systèmes industriels. J’ai installé, câblé et dépanné des portails automatiques, des moteurs, des systèmes automatisés et des installations photovoltaïques. Je cherche un stage ou un poste en maintenance électrique, maintenance industrielle ou automatisme à Cotonou. Disponible immédiatement.</p>
+      <div class="btns">
+        <a class="btn main" href="CV_Dadah_Irene.pdf" download>Télécharger mon CV (PDF)</a>
+        <a class="btn alt" href="#contact">Me contacter</a>
+      </div>
+    </div>
+
+    <section id="realisations">
+      <h2>Réalisations</h2>
+      <div class="proj">
+        <!-- Pour ajouter une photo sous une réalisation : <img src="nom-photo.jpg" alt="Description" style="max-width:100%;border-radius:4px;margin-top:10px"> -->
+        <article>
+          <h3>Machine de torréfaction du café</h3>
+          <div class="where">Projet de fin d’études, GASA Formation, en binôme, 2026</div>
+          <p>Conception et dessin de la machine. Câblage électrique avec un moteur à démarrage deux sens de marche. Assistance aux soudeurs pour la fabrication et les modifications.</p>
+        </article>
+        <article>
+          <h3>Système automatisé de production d’eau alcaline</h3>
+          <div class="where">LELABEL INTERNATIONAL, 2025</div>
+          <p>Participation à l’installation complète et aux essais : capteurs de présence et de niveau, électrovannes, temporisation, circulation et refroidissement de l’eau.</p>
+        </article>
+        <article>
+          <h3>Portails et fenêtres motorisés</h3>
+          <div class="where">LELABEL INTERNATIONAL, 2025</div>
+          <p>Installation, câblage et réglage de motorisations. Diagnostic de pannes, remplacement et réglage d’un capteur de présence, maintenance périodique, montage et essais d’un moteur à deux sens de rotation.</p>
+        </article>
+        <article>
+          <h3>Installation d’un panneau solaire photovoltaïque</h3>
+          <div class="where">Réalisation autonome</div>
+          <p>Dimensionnement et mise en place d’un panneau solaire photovoltaïque.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Expérience professionnelle</h2>
+      <ul class="tl">
+        <li>
+          <h3>LELABEL INTERNATIONAL — Stagiaire technicien, puis interventions ponctuelles</h3>
+          <time>06/2025 – 09/2025</time>
+          <ul>
+            <li>Installation, câblage et réglage de motorisations de portails automatiques</li>
+            <li>Participation à l’installation et à la maintenance de systèmes de climatisation et de réfrigération</li>
+            <li>Participation aux travaux d’électricité du bâtiment</li>
+            <li>Initiation pratique à Arduino, Proteus et AutoCAD</li>
+            <li>Sollicitation régulière par l’entreprise après le stage pour des interventions techniques</li>
+          </ul>
+        </li>
+        <li>
+          <h3>GASA FORMATION — Stage pratique en laboratoire et projet de fin d’études</h3>
+          <time>04/2026 – 06/2026</time>
+          <ul>
+            <li>Travaux pratiques sur panneaux photovoltaïques</li>
+            <li>Participation au démarrage et à la maintenance de moteurs électriques</li>
+            <li>Gestion simultanée du stage et du projet de fin d’études</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Interventions électriques indépendantes — Particuliers et chantiers</h3>
+          <time>En cours</time>
+          <ul>
+            <li>Diagnostic et dépannage d’installations électriques chez des particuliers</li>
+            <li>Interventions électriques en équipe sur chantiers, selon les opportunités</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Maintenance de smartphones et d’ordinateurs — Activité indépendante</h3>
+          <time>En cours</time>
+          <ul>
+            <li>Diagnostic, recherche de pannes et réparation de smartphones et d’ordinateurs</li>
+            <li>Conseil aux clients et vente d’accessoires</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences techniques</h2>
+      <dl>
+        <dt>Génie électrique</dt>
+        <dd>Installations électriques du bâtiment, câblage, diagnostic et dépannage, maintenance préventive et corrective</dd>
+        <dt>Moteurs et motorisation</dt>
+        <dd>Démarrage et maintenance de moteurs électriques, moteur à deux sens de marche, portails automatiques</dd>
+        <dt>Automatisme</dt>
+        <dd>Capteurs de présence et de niveau, électrovannes, temporisation, essais fonctionnels</dd>
+        <dt>Énergie et froid</dt>
+        <dd>Bases du photovoltaïque, participation à l’installation et à la maintenance de climatisation</dd>
+        <dt>Informatique et téléphonie</dt>
+        <dd>Maintenance de base d’ordinateurs, réparation de smartphones</dd>
+      </dl>
+      <p style="margin:26px 0 10px;font-weight:600">Outils et logiciels</p>
+      <ul class="tools">
+        <li>Multimètre</li><li>Outillage de maintenance</li><li>Arduino</li><li>Proteus</li><li>AutoCAD</li><li>Word</li><li>Excel</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Éducation</h2>
+      <h3>Génie électrique, option Systèmes industriels</h3>
+      <p class="lead">GASA Formation, 2026. Attestation de réussite, mention Bien. Examen national de Licence professionnelle passé, résultat en attente.</p>
+      <p class="lead">Délégué de classe pendant les trois années de formation. Langues : français, fon (courant), anglais (notions).</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p class="lead">Ouvert aux offres de stage et d’emploi en électricité, maintenance et automatisme.</p>
+      <p>Téléphone : <a href="tel:+2290162200604">+229 01 62 20 06 04</a></p>
+      <p>E-mail : <a href="mailto:dadairene220@gmail.com">dadairene220@gmail.com</a></p>
+      <!-- LINKEDIN : pour l'activer, remplace VOTRE-LIEN par l'adresse de ton profil
+           puis supprime la ligne "<!--" avant et la ligne "-->" après.
+      <p>LinkedIn : <a href="VOTRE-LIEN" target="_blank" rel="noopener">Mon profil LinkedIn</a></p>
+      -->
+      <p>Localisation : Cotonou, Bénin</p>
+    </section>
   </div>
-</section>
-
-<main>
-  <section id="apropos">
-    <h2>À propos de moi</h2>
-    <div class="underline"></div>
-    <p>
-      Titulaire d'une licence en génie électrique, option systèmes industriels,
-      je possède des connaissances en installations électriques, maintenance
-      des équipements, automatismes et systèmes électromécaniques.
-    </p>
-    <p>
-      Mes expériences pratiques m'ont également permis de découvrir la
-      maintenance informatique, le diagnostic et la réparation de téléphones,
-      ainsi que l'installation et la maintenance de systèmes de climatisation
-      et de portails automatiques.
-    </p>
-    <p>
-      <strong>Mon objectif :</strong> intégrer une entreprise où je pourrai
-      mettre en pratique mes acquis, apprendre auprès de professionnels
-      expérimentés et évoluer dans les métiers techniques et industriels.
-    </p>
-  </section>
-
-  <section id="competences">
-    <h2>Mes compétences</h2>
-    <div class="underline"></div>
-    <div class="grid">
-      <div class="card">
-        <h3>Électricité</h3>
-        <p>Installations électriques, notions de maintenance, diagnostic et câblage.</p>
-      </div>
-      <div class="card">
-        <h3>Maintenance industrielle</h3>
-        <p>Notions de démarrage, entretien et maintenance de moteurs électriques.</p>
-      </div>
-      <div class="card">
-        <h3>Automatisme</h3>
-        <p>Découverte des systèmes automatisés, portails automatiques et Arduino.</p>
-      </div>
-      <div class="card">
-        <h3>Informatique et électronique</h3>
-        <p>Diagnostic et réparation de téléphones, maintenance informatique et outils bureautiques.</p>
-      </div>
-      <div class="card">
-        <h3>Énergie et froid</h3>
-        <p>Découverte des installations photovoltaïques, de la climatisation et des systèmes frigorifiques.</p>
-      </div>
-      <div class="card">
-        <h3>Logiciels techniques</h3>
-        <p>Notions de Proteus, AutoCAD et Arduino.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Expériences pratiques</h2>
-    <div class="underline"></div>
-    <div class="timeline">
-      <div class="card">
-        <h3>Stage pratique — GASA Formation</h3>
-        <p class="muted">3 mois · Travaux pratiques en laboratoire</p>
-        <p>
-          Participation à des activités liées aux panneaux photovoltaïques,
-          au démarrage des moteurs électriques et à leur maintenance.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Stage technique — Lelabelinternational</h3>
-        <p class="muted">4 mois · Installations et maintenance</p>
-        <p>
-          Découverte de la climatisation, des systèmes frigorifiques,
-          de l'installation et de la maintenance de portails automatiques,
-          ainsi que des installations électriques de bâtiment.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Activités indépendantes</h3>
-        <p class="muted">Réparation et services techniques</p>
-        <p>
-          Diagnostic et réparation de téléphones, maintenance informatique
-          et vente d'accessoires pour appareils mobiles.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="formation">
-    <h2>Formation</h2>
-    <div class="underline"></div>
-    <div class="card">
-      <h3>Licence en Génie électrique</h3>
-      <p><strong>Option :</strong> Systèmes industriels</p>
-      <p><strong>Établissement :</strong> GASA Formation / Université GASA</p>
-      <p><strong>Année :</strong> 2026</p>
-    </div>
-  </section>
-
-  <section id="outils">
-    <h2>Outils et domaines techniques</h2>
-    <div class="underline"></div>
-    <span class="pill">Multimètre</span>
-    <span class="pill">Maintenance électrique</span>
-    <span class="pill">Moteurs électriques</span>
-    <span class="pill">Photovoltaïque</span>
-    <span class="pill">Arduino</span>
-    <span class="pill">Proteus</span>
-    <span class="pill">AutoCAD</span>
-    <span class="pill">Maintenance informatique</span>
-    <span class="pill">Diagnostic mobile</span>
-  </section>
-
-  <section id="contact">
-    <div class="contact">
-      <h2>Entrons en contact</h2>
-      <p>
-        Je suis ouvert aux opportunités de stage, d'emploi et de collaboration
-        dans les domaines de l'électricité, de la maintenance et de l'automatisme.
-      </p>
-      <p><strong>Téléphone :</strong> <a href="tel:+2290162200604">+229 01 62 20 06 04</a></p>
-      <p><strong>E-mail :</strong> <a href="mailto:dadairene220@gmail.com">dadairene220@gmail.com</a></p>
-      <p><strong>Localisation :</strong> Cotonou, Bénin</p>
-    </div>
-  </section>
 </main>
 
 <footer>
-  © 2026 DADA Iréné — Portfolio professionnel
+  <div class="wrap">© 2026 DADAH Iréné</div>
 </footer>
-
 </body>
-                                             </html>
-  
+</html>
